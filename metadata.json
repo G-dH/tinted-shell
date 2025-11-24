@@ -1,0 +1,11 @@
+{
+  "name": "Tinted Shell",
+  "description": "Tints GNOME Shell elements with the system accent color while preserving the original visual style.",
+  "uuid": "tinted-shell@pakovm",
+  "shell-version": [
+    "48",
+    "49"
+  ],
+  "url": "",
+  "settings-schema": "org.gnome.shell.extensions.tinted-shell"
+}
