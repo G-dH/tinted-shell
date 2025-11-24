@@ -1,6 +1,6 @@
 EXTENSION_UUID = tinted-shell@pakovm
 INSTALL_PATH = ~/.local/share/gnome-shell/extensions/$(EXTENSION_UUID)
-FILES = extension.js metadata.json gnome-shell.css
+FILES = extension.js metadata.json stylesheet.css
 
 install:
 	rm -rf $(INSTALL_PATH)
