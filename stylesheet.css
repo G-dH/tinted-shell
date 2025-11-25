@@ -1,22 +1,3 @@
-/* This stylesheet is generated, DO NOT EDIT */
-/* Copyright 2009, 2015 Red Hat, Inc.
- *
- * Portions adapted from Mx's data/style/default.css
- *   Copyright 2009 Intel Corporation
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms and conditions of the GNU Lesser General Public License,
- * version 2.1, as published by the Free Software Foundation.
- *
- * This program is distributed in the hope it will be useful, but WITHOUT ANY
- * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
- * more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
- */
 /* Global Values */
 stage {
   font-size: 1em;
@@ -320,7 +301,7 @@ stage {
 .button.flat:focus {
   color: #ffffff;
   box-shadow: inset 0 0 0 2px st-transparentize(st-mix(-st-accent-color, #ffffff, 60%), 0.2) !important;
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), rgba(54, 54, 58, 0.25), 5%);
+  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), rgba(54, 54, 58, 0.25), 10%);
 }
 
 .calendar .calendar-day-heading:focus:hover,
@@ -337,7 +318,7 @@ stage {
 .message-notification-group .flat.message-collapse-button:focus:hover,
 .calendar .calendar-month-header .pager-button:focus:hover,
 .button.flat:focus:hover {
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#36363a, 7%), 5%);
+  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#36363a, 7%), 10%);
 }
 
 .calendar .calendar-day-heading:hover,
@@ -467,7 +448,7 @@ stage {
 .message-notification-group .flat.message-collapse-button:active:focus,
 .calendar .calendar-month-header .pager-button:active:focus,
 .button.flat:active:focus {
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#36363a, 9%), 5%);
+  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#36363a, 9%), 10%);
 }
 
 .calendar .calendar-day-heading:checked,
@@ -770,7 +751,7 @@ stage {
 
 .calendar:insensitive,
 .datemenu-today-button:insensitive {
-  background-color: transparent !important;
+  background-color: st-mix(-st-accent-color, transparent !important, 10%);
 }
 
 .calendar:hover,
@@ -792,19 +773,19 @@ stage {
 
 .calendar:active:focus,
 .datemenu-today-button:active:focus {
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#36363a, 9%), 5%);
+  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#36363a, 9%), 5%), 10%);
 }
 
 .calendar:focus,
 .datemenu-today-button:focus {
   color: #ffffff;
   box-shadow: inset 0 0 0 2px st-transparentize(st-mix(-st-accent-color, #ffffff, 60%), 0.2) !important;
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), #47474c, 5%);
+  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), #47474c, 5%), 10%);
 }
 
 .calendar:focus:hover,
 .datemenu-today-button:focus:hover {
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#47474c, 4%), 5%);
+  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#47474c, 4%), 5%), 10%);
 }
 
 .calendar:insensitive,
@@ -989,110 +970,6 @@ StEntry StLabel.hint-text {
   border-radius: 999px;
   padding: 6px 12px;
   text-align: center;
-}
-
-/* General Typography */
-.unlock-dialog-clock .unlock-dialog-clock-date,
-.app-folder-dialog .folder-name-container .folder-name-label,
-.app-folder-dialog .folder-name-container .folder-name-entry,
-.search-statustext {
-  font-weight: 800;
-  font-size: 1.818em;
-}
-
-.conflicting-session-dialog-content .conflicting-session-dialog-title,
-.message-dialog-content .message-dialog-title,
-.message-notification-group .message-group-header .message-group-title,
-.datemenu-today-button .date-label {
-  font-weight: 800;
-  font-size: 1.364em;
-}
-
-.login-dialog .user-widget.horizontal .user-widget-label,
-.unlock-dialog .user-widget.horizontal .user-widget-label,
-.quick-toggle-menu .header .title,
-.message-list .message-list-placeholder {
-  font-weight: 700;
-  font-size: 1.364em;
-}
-
-.login-dialog-auth-list-label,
-#LookingGlassDebugFlags .lg-debug-flags-header,
-#LookingGlassExtensions .lg-extensions-none,
-.word-suggestions,
-.bt-menu-placeholder.popup-menu-item,
-.restart-message,
-.polkit-dialog-user-layout .polkit-dialog-user-label,
-.polkit-dialog-user-layout .polkit-dialog-user-root-label,
-.message-dialog-content .message-dialog-title.lightweight {
-  font-weight: 700;
-  font-size: 1.182em;
-}
-
-.login-dialog-not-listed-label,
-#LookingGlassExtensions .lg-extension .lg-extension-name,
-#LookingGlassWindows .lg-window .lg-window-name,
-#LookingGlassPropertyInspector .lg-obj-inspector-title,
-.background-app-item .title,
-.quick-toggle .quick-toggle-title,
-.osd-window,
-.dialog-list .dialog-list-title,
-.message-list-controls,
-.weather-button .weather-box .weather-header-box .weather-header,
-.world-clocks-button .world-clocks-header,
-.events-button .events-box .events-list .event-box .event-summary,
-.events-button .events-box .events-title,
-.calendar .calendar-month-header .calendar-month-label {
-  font-weight: 700;
-  font-size: 1em;
-}
-
-.quick-toggle-menu .header .subtitle,
-.app-menu .popup-inactive-menu-item:first-child>StLabel {
-  font-weight: 700;
-  font-size: 0.818em;
-}
-
-.lg-completions-text,
-.caps-lock-warning-label,
-.background-app-item .subtitle,
-.quick-toggle .quick-toggle-subtitle,
-.screenshot-ui-type-button .icon-label-button-container,
-.prompt-dialog .prompt-dialog-error-label,
-.prompt-dialog .prompt-dialog-info-label,
-.prompt-dialog .prompt-dialog-null-label,
-.run-dialog .run-dialog-description,
-.dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description,
-.message .message-header .message-header-content .event-time,
-.world-clocks-button .world-clocks-grid .world-clocks-timezone,
-.events-button .events-box .events-list .event-box .event-time {
-  font-weight: 400;
-  font-size: 0.818em;
-}
-
-.weather-button .weather-box .weather-grid .weather-forecast-time,
-.calendar .calendar-week-number,
-.calendar .calendar-day-heading,
-.calendar .calendar-day {
-  font-weight: 400;
-  font-size: 0.818em;
-}
-
-#LookingGlassDebugFlags .lg-debug-flag-button StLabel,
-#LookingGlassEvaluator .evaluator-results,
-.lg-dialog .actor-link {
-  font-family: monospace;
-}
-
-.unlock-dialog-clock .unlock-dialog-clock-time,
-#panel,
-.weather-button .weather-box .weather-grid .weather-forecast-temp,
-.world-clocks-button .world-clocks-grid .world-clocks-timezone,
-.world-clocks-button .world-clocks-grid .world-clocks-time,
-.events-button .events-box .events-list .event-box .event-time,
-.calendar .calendar-day-heading,
-.calendar .calendar-day {
-  font-feature-settings: "tnum";
 }
 
 /* OSD Elements */
@@ -1310,7 +1187,7 @@ StEntry StLabel.hint-text {
 .app-folder-dialog .folder-name-container .folder-name-entry:focus,
 .search-entry:focus {
   box-shadow: inset 0 0 0 2px st-transparentize(st-mix(-st-accent-color, #ffffff, 60%), 0.2) !important;
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), #404045, 5%);
+  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), #404045, 5%), 2%);
   color: #fafafb;
 }
 
@@ -1933,7 +1810,7 @@ StScrollBar>.hhandle:active {
 }
 
 .popup-menu-item:active:focus {
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#424247, 9%), 5%);
+  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#424247, 9%), 5%), 10%);
 }
 
 .popup-menu-item:hover,
@@ -2010,7 +1887,7 @@ StScrollBar>.hhandle:active {
 }
 
 .popup-sub-menu .popup-menu-item:active:focus {
-  background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#56565c, 9%), 5%);
+  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#56565c, 9%), 5%), 10%);
 }
 
 .popup-sub-menu .popup-menu-item:hover,
