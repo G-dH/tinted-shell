@@ -1187,7 +1187,7 @@ StEntry StLabel.hint-text {
 .app-folder-dialog .folder-name-container .folder-name-entry:focus,
 .search-entry:focus {
   box-shadow: inset 0 0 0 2px st-transparentize(st-mix(-st-accent-color, #ffffff, 60%), 0.2) !important;
-  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), #404045, 5%), 2%);
+  background-color: st-mix(-st-accent-color, st-mix(st-mix(-st-accent-color, #ffffff, 60%), #404045, 5%), 5%);
   color: #fafafb;
 }
 
