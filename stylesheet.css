@@ -451,7 +451,6 @@
   background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-lighten(#47474c, 4%), 5%);
 }
 
-.quick-toggle-menu:insensitive,
 .message:insensitive,
 .events-button:insensitive,
 .world-clocks-button:insensitive,
