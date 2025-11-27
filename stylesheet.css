@@ -1587,6 +1587,10 @@ StScrollBar>.hhandle:active {
   background-color: transparent;
 }
 
+.background-apps-quick-toggle {
+  background-color: transparent;
+}
+
 .background-app-item .icon-button {
   background-color: st-mix(-st-accent-color, rgba(255, 255, 255, 0.13), 10%);
 }
