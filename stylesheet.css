@@ -66,7 +66,6 @@
 .message-notification-group .message-collapse-button:insensitive,
 .calendar .calendar-month-header .pager-button:insensitive,
 .button:insensitive {
-  color: st-transparentize(#ffffff, 0.5);
   background-color: st-mix(-st-accent-color, st-darken(st-mix(#ffffff, #36363a, 9%), 3%), 10%);
 }
 
@@ -193,7 +192,6 @@
 .icon-button.flat,
 .calendar .calendar-month-header .pager-button,
 .button.flat {
-  color: #ffffff;
   background-color: st-mix(-st-accent-color, #36363a, 10%);
 }
 
@@ -1696,7 +1694,6 @@ StScrollBar>.hhandle:active {
 
 .list-search-result:insensitive,
 .search-provider-icon:insensitive {
-  color: st-transparentize(#fafafb, 0.5);
   background-color: st-mix(-st-accent-color, #38383b, 10%);
 }
 
@@ -1822,7 +1819,6 @@ StScrollBar>.hhandle:active {
 
 .overview-tile:insensitive,
 .grid-search-result:insensitive {
-  color: st-transparentize(#fafafb, 0.5);
   background-color: st-mix(-st-accent-color, #222226, 10%);
 }
 
@@ -1880,7 +1876,6 @@ StScrollBar>.hhandle:active {
 }
 
 .app-folder:insensitive {
-  color: st-transparentize(#fafafb, 0.5);
   background-color: st-mix(-st-accent-color, st-darken(st-mix(#fafafb, #222226, 9%), 3%), 10%);
 }
 
@@ -2003,7 +1998,6 @@ StScrollBar>.hhandle:active {
 
 .app-folder-dialog .overview-tile:insensitive,
 .app-folder-dialog .grid-search-result:insensitive {
-  color: st-transparentize(#fafafb, 0.5);
   background-color: st-mix(-st-accent-color, #38383b, 10%);
 }
 
@@ -2228,14 +2222,6 @@ StScrollBar>.hhandle:active {
 
 .lg-dialog .shell-link:active {
   color: st-darken(st-lighten(-st-accent-color, 20%), 10%);
-}
-
-.lg-dialog .actor-link {
-  color: st-darken(#ffffff, 20%);
-}
-
-.lg-dialog .actor-link:active {
-  color: st-lighten(#ffffff, 20%);
 }
 
 #LookingGlassDialog {
