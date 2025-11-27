@@ -1713,38 +1713,32 @@ StScrollBar>.hhandle:active {
 }
 
 #dash .show-apps .overview-icon,
-#dash .overview-tile .overview-icon,
-#dash .grid-search-result .overview-icon {
-  background-color: st-mix(-st-accent-color, #38383b, 10%);
+#dash .overview-tile .overview-icon {
+  background-color: transparent;
 }
 
 #dash .show-apps:focus .overview-icon,
-#dash .overview-tile:focus .overview-icon,
-#dash .grid-search-result:focus .overview-icon {
+#dash .overview-tile:focus .overview-icon {
   background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), rgba(56, 56, 59, 0.25), 5%);
 }
 
 #dash .show-apps:hover .overview-icon,
-#dash .overview-tile:hover .overview-icon,
-#dash .grid-search-result:hover .overview-icon {
+#dash .overview-tile:hover .overview-icon {
   background-color: st-mix(-st-accent-color, st-lighten(#38383b, 7%), 10%);
 }
 
 #dash .show-apps:checked .overview-icon,
-#dash .overview-tile:checked .overview-icon,
-#dash .grid-search-result:checked .overview-icon {
+#dash .overview-tile:checked .overview-icon {
   background-color: st-mix(-st-accent-color, st-lighten(#38383b, 8%), 10%);
 }
 
 #dash .show-apps:checked .overview-icon:hover,
-#dash .overview-tile:checked .overview-icon:hover,
-#dash .grid-search-result:checked .overview-icon:hover {
+#dash .overview-tile:checked .overview-icon:hover {
   background-color: st-mix(-st-accent-color, st-lighten(st-lighten(#38383b, 8%), 7%), 10%);
 }
 
 #dash .show-apps:checked .overview-icon:active,
-#dash .overview-tile:checked .overview-icon:active,
-#dash .grid-search-result:checked .overview-icon:active {
+#dash .overview-tile:checked .overview-icon:active {
   background-color: st-mix(-st-accent-color, st-lighten(st-lighten(#38383b, 8%), 9%), 10%);
 }
 
